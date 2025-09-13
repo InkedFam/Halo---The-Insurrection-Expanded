@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <!--marine/cata-->
+
+    <!-- Helmet -->
+    <ThingDef ParentName="HALO_INS_ArmorHelmetMakeableBase">
+        <defName>HALO_INS_ODSTHelmet</defName>
+        <label>INS ODST Helmet</label>
+        <description>The standard helmet worn by Orbital Drop Shock Troopers, which was originally designed for use with the MJOLNIR system Like the Beta-5 Division MP helmet, the ODST helmet is enclosed and can provide oxygen for fifteen minutes; unlike the Beta-5 Division MP helmet, however, the ODST helmet features a distinct, more rounded visor. This version is made of titanium and is coated with a heat-dispersing material; the inside of the helmet is lined with padding to provide comfort for the user. The visor is capable of polarizing, fully obscuring the user's face, or depolarizing, becoming nearly transparent, at the user's whim; the visor is generally colored silver-blue, though infrequently red, dark orange, silver, black, and golden polarization are also possible.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ins_odst/ODST_Helmet_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <generateCommonality>2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>HALO_Research_UNSC_ODSTArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>45</Plasteel>
+        </costList>
+        <statBases>
+            <WorkToMake>23625</WorkToMake>
+            <MaxHitPoints>165</MaxHitPoints>
+            <Mass>1.6</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.57</ArmorRating_Heat>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <immuneToToxGasExposure MayRequire="Ludeon.RimWorld.Biotech">true</immuneToToxGasExposure>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/ins_odst/ODST_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>HALO_INS_ODSTHelmet</li>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+
+    <!-- Armor -->
+    <ThingDef ParentName="HALO_INS_ArmorMachineableBase">
+        <defName>HALO_INS_ODSTArmor</defName>
+        <label>INS ODST Armor</label>
+        <description>The ODST body armor is a signature piece of equipment used by the Orbital Drop Shock Troopers. The suit, which is produced by Misriah Armory, is vacuum-rated and is capable of extra-vehicular activity for fifteen minutes The armor provides numerous advantages in the field, including ballistic protection, temperature control, as well as thermal insulation against extreme temperatures experienced during atmospheric entry and thermal protection from Covenant energy weapons.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ins_odst/ODST_Armor_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <generateCommonality>2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>HALO_Research_UNSC_ODSTArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <ComponentSpacer>5</ComponentSpacer>
+            <Plasteel>125</Plasteel>
+            <Uranium>35</Uranium>
+        </costList>
+        <statBases>
+            <WorkToMake>67500</WorkToMake>
+            <MaxHitPoints>370</MaxHitPoints>
+            <Mass>13.5</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.57</ArmorRating_Heat>
+            <Insulation_Cold>60</Insulation_Cold>
+            <Insulation_Heat>11</Insulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/ins_odst/ODST_Armor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>HALO_INS_ODSTArmor</li>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+
+</Defs>

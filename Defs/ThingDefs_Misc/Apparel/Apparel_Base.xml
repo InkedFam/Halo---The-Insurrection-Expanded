@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef Name="HALO_INS_ArmorHelmetMakeableBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>HALO_Category_INS_Headgear</li>
+        </thingCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <recipeUsers Inherit="False">
+                <li>HALO_UNSC_Assembler</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingSetMakerTags Inherit="False">
+        </thingSetMakerTags>
+        <weaponTags Inherit="False">
+        </weaponTags>
+        <tradeTags Inherit="False">
+            <li>HALO_INS_Armor</li>
+        </tradeTags>
+        <apparel>
+            <tags Inherit="False">
+                <li>HALO_INS_Helmet</li>                
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Name="HALO_INS_ArmorMachineableBase" ParentName="ArmorMachineableBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>HALO_Category_INS_Armor</li>
+        </thingCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <recipeUsers Inherit="False">
+                <li>HALO_UNSC_Assembler</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingSetMakerTags Inherit="False">
+        </thingSetMakerTags>
+        <weaponTags Inherit="False">
+        </weaponTags>
+        <tradeTags Inherit="False">
+            <li>HALO_INS_Armor</li>
+        </tradeTags>
+        <apparel>
+            <tags Inherit="False">
+                <li>HALO_INS_Armor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+</Defs>

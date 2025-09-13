@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <!--Better than cata in everyway-->
+
+    <!-- Helmet -->
+    <ThingDef ParentName="HALO_INS_ArmorHelmetMakeableBase">
+        <defName>HALO_INS_MjolnirHelmet</defName>
+        <label>INS Mjolnir helmet</label>
+        <description>Created parallel to the SPARTAN-II program by the Office of Naval Intelligence's Materials Group, the Mjolnir armor is the most advanced piece of tactical military hardware in human hands. Each suit alone costs as much as a small starship The battlesuit is a sealed system, capable of extra-vehicular activity for a limited amount of time or operations in a toxic atmosphere. It is hardened against EMP and radiation, and has filters that are completely effective at removing toxins and bacteria from the local atmosphere. Between the external armor and the internal padding is the most devastating weapon the suit carries: a layer of polymerized lithium niobocene, a liquid metal crystal that deforms along a preferred axis when exposed to an electric charge. Woven by molecular tools into a capillary system, this layer is amorphous, yet amplifies force, doubling lifting capability and increasing reaction time by a factor of five.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ins_mjolnir/Mjolnir_Helmet_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <generateCommonality>2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>HALO_Research_UNSC_MjolnirArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>26250</WorkToMake>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+        </costList>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <immuneToToxGasExposure MayRequire="Ludeon.RimWorld.Biotech">true</immuneToToxGasExposure>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/ins_mjolnir/Mjolnir_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>HALO_INS_MjolnirHelmet</li>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+
+    <!-- Armor -->
+    <ThingDef ParentName="HALO_INS_ArmorMachineableBase">
+        <defName>HALO_INS_MjolnirArmor</defName>
+        <label>INS Mjolnir Armor</label>
+        <description>Created parallel to the SPARTAN-II program by the Office of Naval Intelligence's Materials Group, the Mjolnir armor is the most advanced piece of tactical military hardware in human hands. Each suit alone costs as much as a small starship The battlesuit is a sealed system, capable of extra-vehicular activity for a limited amount of time or operations in a toxic atmosphere. It is hardened against EMP and radiation, and has filters that are completely effective at removing toxins and bacteria from the local atmosphere. Between the external armor and the internal padding is the most devastating weapon the suit carries: a layer of polymerized lithium niobocene, a liquid metal crystal that deforms along a preferred axis when exposed to an electric charge. Woven by molecular tools into a capillary system, this layer is amorphous, yet amplifies force, doubling lifting capability and increasing reaction time by a factor of five.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ins_mjolnir/Mjolnir_Armor_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <generateCommonality>2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>HALO_Research_UNSC_MjolnirArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>75000</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>15</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <Insulation_Cold>72</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <EquipDelay>17</EquipDelay>
+        </statBases>
+        <costList>
+            <ComponentSpacer>6</ComponentSpacer>
+            <Plasteel>150</Plasteel>
+            <Uranium>50</Uranium>
+        </costList>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>			
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/ins_mjolnir/Mjolnir_Armor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>HALO_INS_MjolnirArmor</li>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+                <compClass>VEF.Apparels.CompShieldBubble</compClass>
+                <blockRangedAttack>true</blockRangedAttack>
+                <blockMeleeAttack>false</blockMeleeAttack>
+                <showWhenDrafted>true</showWhenDrafted>
+                <showOnHostiles>true</showOnHostiles>
+                <showOnNeutralInCombat>true</showOnNeutralInCombat>
+                <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+                <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+                <EnergyShieldEnergyMax>120</EnergyShieldEnergyMax>
+                <minShieldSize>1.4</minShieldSize>
+                <maxShieldSize>1.8</maxShieldSize>
+                <disableRotation>true</disableRotation>
+                <chargeFullyWhenMade>true</chargeFullyWhenMade>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

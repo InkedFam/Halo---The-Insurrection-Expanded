@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <!--Worse than vanilla marine armor, no speed penalty-->
+
+    <!-- Helmet -->
+    <ThingDef Name="HALO_INS_MarineHelmetBase" ParentName="HALO_INS_ArmorHelmetMakeableBase">
+        <defName>HALO_INS_MarineHelmet_Regular</defName>
+        <label>INS marine helmet</label>
+        <description>All iterations of the BDU feature one of several versions of the standard-issue CH252 helmet, which is painted to match the corresponding body armor. The helmet may be mounted with various accessories, such as a holographic tactical eyepiece, a helmet recorder, a boom microphone, polarized tactical goggles, a flashlight, or a night vision device. Marines sometimes wear balaclavas with their helmets, both in frigid and temperate climates. In hazardous situations, gas masks such as the S90 gas mask are worn.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ins_marine/Helmet/Regular/Marine_HelmetRegular_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <generateCommonality>2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>HALO_Research_UNSC_MarineArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>20</Plasteel>
+            <Steel>40</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>19000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>            <!-- 150 -->
+            <Mass>1.0</Mass>
+            <Flammability>0.5</Flammability>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>2.0</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/ins_marine/Helmet/Regular/Marine_HelmetRegular</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>HALO_INS_MarineHelmet</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <ThingDef ParentName="HALO_INS_MarineHelmetBase">
+        <defName>HALO_INS_MarineHelmet_Advanced</defName>
+        <label>INS advanced marine helmet</label>
+        <graphicData>
+            <texPath>Things/Apparel/ins_marine/Helmet/Advanced/Marine_HelmetAdvanced_UI</texPath>
+        </graphicData>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>25</Plasteel>
+            <Steel>45</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/ins_marine/Helmet/Advanced/Marine_HelmetAdvanced</wornGraphicPath>
+        </apparel>
+        <modExtensions Inherit="false">
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="HALO_INS_MarineHelmetBase">
+        <defName>HALO_INS_MarineHelmet_Marksman</defName>
+        <label>INS marksman marine helmet</label>
+        <graphicData>
+            <texPath>Things/Apparel/ins_marine/Helmet/Marksman/Marine_HelmetMarksman_UI</texPath>
+        </graphicData>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+            <Steel>40</Steel>
+        </costList>
+        <statBases>            
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/ins_marine/Helmet/Marksman/Marine_HelmetMarksman</wornGraphicPath>
+        </apparel>
+        <modExtensions Inherit="false">
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="HALO_INS_MarineHelmetBase">
+        <defName>HALO_INS_MarineHelmet_Reinforced</defName>
+        <label>INS reinforced marine helmet</label>
+        <graphicData>
+            <texPath>Things/Apparel/ins_marine/Helmet/Reinforced/Marine_HelmetReinforced_UI</texPath>
+        </graphicData>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>25</Plasteel>
+            <Steel>50</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.39</ArmorRating_Blunt>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/ins_marine/Helmet/Reinforced/Marine_HelmetReinforced</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Armor -->
+    <ThingDef ParentName="HALO_INS_ArmorMachineableBase">
+        <defName>HALO_INS_MarineArmor</defName>
+        <label>INS Marine Armor</label>
+        <description>The Marine BDU is equipped with one of various models of ballistic armor at multiple points, including the torso, the shoulders, and the shins. Some versions incorporate armor for the forearms, thighs, and groin as well. The armor is resilient against traditional ballistic weaponry though it is easily damaged by plasma weaponry. While different iterations of the BDU feature different armor models, all possess roughly equivalent durability. Lighter body armor, such as the ballistic assault vest, is used in lieu of standard-issue gear during some operations.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ins_marine/Marine_Armor_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <generateCommonality>2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>HALO_Research_UNSC_MarineArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <ComponentSpacer>3</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>50000</WorkToMake>
+            <MaxHitPoints>290</MaxHitPoints>
+            <Mass>8</Mass>
+            <Flammability>0.5</Flammability>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Insulation_Cold>34</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>5.0</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/ins_marine/Marine_Armor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>HALO_INS_MarineArmor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+
+</Defs>

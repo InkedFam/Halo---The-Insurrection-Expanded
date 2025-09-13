@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <!-- Helmet Regular-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/statBases</xpath>
+                <value>
+                    <Bulk>5</Bulk>
+                    <WornBulk>1</WornBulk>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/statBases/Flammability</xpath>
+                <value>
+                    <Flammability>0</Flammability>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/statBases/Mass</xpath>
+                <value>
+                    <Mass>4</Mass>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>190</MaxHitPoints>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/statBases/ArmorRating_Sharp</xpath>
+                <value>
+                    <ArmorRating_Sharp>14</ArmorRating_Sharp>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/statBases/ArmorRating_Blunt</xpath>
+                <value>
+                    <ArmorRating_Blunt>34</ArmorRating_Blunt>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/apparel/layers</xpath>
+                <value>
+                    <li>OnHead</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]/costList</xpath>
+                <value>
+                    <costList>
+                        <ComponentSpacer>1</ComponentSpacer>
+                        <Plasteel>30</Plasteel>
+                        <Steel>60</Steel>
+                        <DevilstrandCloth>15</DevilstrandCloth>
+                    </costList>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Regular"]</xpath>
+                <value>
+                    <li Class="CombatExtended.PartialArmorExt">
+                        <stats>
+                            <li>
+                                <ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Eye</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Eye</li>
+                                </parts>
+                            </li>
+                        </stats>
+                    </li>
+                </value>
+            </li>
+
+            <!-- Helmet Advanced-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Advanced"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>210</MaxHitPoints>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Advanced"]/statBases/ArmorRating_Sharp</xpath>
+                <value>
+                    <ArmorRating_Sharp>14</ArmorRating_Sharp>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Advanced"]/statBases/ArmorRating_Blunt</xpath>
+                <value>
+                    <ArmorRating_Blunt>34</ArmorRating_Blunt>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Advanced"]/statBases</xpath>
+                <value>
+                    <NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Advanced"]/costList</xpath>
+                <value>
+                    <costList>
+                        <ComponentSpacer>1</ComponentSpacer>
+                        <Plasteel>35</Plasteel>
+                        <Steel>65</Steel>
+                        <DevilstrandCloth>15</DevilstrandCloth>
+                    </costList>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Advanced"]</xpath>
+                <value>
+                    <li Class="CombatExtended.PartialArmorExt">
+                        <stats>
+                            <li>
+                                <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Eye</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Eye</li>
+                                </parts>
+                            </li>
+                        </stats>
+                    </li>
+                </value>
+            </li>
+
+            <!-- Helmet Reinforced-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Reinforced"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>230</MaxHitPoints>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Reinforced"]/statBases/ArmorRating_Sharp</xpath>
+                <value>
+                    <ArmorRating_Sharp>15</ArmorRating_Sharp>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Reinforced"]/statBases/ArmorRating_Blunt</xpath>
+                <value>
+                    <ArmorRating_Blunt>35</ArmorRating_Blunt>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Reinforced"]/costList</xpath>
+                <value>
+                    <costList>
+                        <ComponentSpacer>1</ComponentSpacer>
+                        <Plasteel>40</Plasteel>
+                        <Steel>70</Steel>
+                        <DevilstrandCloth>15</DevilstrandCloth>
+                    </costList>
+                </value>
+            </li>
+
+            <!-- Helmet Marksman-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Marksman"]/statBases</xpath>
+                <value>
+                    <NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Marksman"]/equippedStatOffsets</xpath>
+                <value>
+                    <AimingAccuracy>0.15</AimingAccuracy>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Marksman"]/costList</xpath>
+                <value>
+                    <costList>
+                        <ComponentSpacer>1</ComponentSpacer>
+                        <ComponentIndustrial>2</ComponentIndustrial>
+                        <Plasteel>30</Plasteel>
+                        <Steel>60</Steel>
+                    </costList>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineHelmet_Marksman"]</xpath>
+                <value>
+                    <li Class="CombatExtended.PartialArmorExt">
+                        <stats>
+                            <li>
+                                <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Eye</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Eye</li>
+                                </parts>
+                            </li>
+                        </stats>
+                    </li>
+                </value>
+            </li>
+
+            <!-- Armor -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/statBases</xpath>
+                <value>
+                    <Bulk>100</Bulk>
+                    <WornBulk>15</WornBulk>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>450</MaxHitPoints>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/statBases/Flammability</xpath>
+                <value>
+                    <Flammability>0</Flammability>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/statBases/Mass</xpath>
+                <value>
+                    <Mass>40</Mass>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/statBases/ArmorRating_Sharp</xpath>
+                <value>
+                    <ArmorRating_Sharp>18</ArmorRating_Sharp>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/statBases/ArmorRating_Blunt</xpath>
+                <value>
+                    <ArmorRating_Blunt>40</ArmorRating_Blunt>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/equippedStatOffsets</xpath>
+                <value>
+                    <CarryWeight>80</CarryWeight>
+                    <CarryBulk>10</CarryBulk>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/costList</xpath>
+                <value>
+                    <costList>
+                        <ComponentSpacer>3</ComponentSpacer>
+                        <Plasteel>90</Plasteel>
+                        <Steel>180</Steel>
+                        <DevilstrandCloth>35</DevilstrandCloth>
+                    </costList>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]/apparel/bodyPartGroups</xpath>
+                <value>
+                    <li>Hands</li>
+                    <li>Feet</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>Defs/ThingDef[defName="HALO_INS_MarineArmor"]</xpath>
+                <value>
+                    <li Class="CombatExtended.PartialArmorExt">
+                        <stats>
+                            <li>
+                                <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Neck</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Neck</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Arm</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Arm</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+                                <parts>
+                                    <li>Hand</li>
+                                </parts>
+                            </li>
+                            <li>
+                                <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+                                <parts>
+                                    <li>Hand</li>
+                                </parts>
+                            </li>
+                        </stats>
+                    </li>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

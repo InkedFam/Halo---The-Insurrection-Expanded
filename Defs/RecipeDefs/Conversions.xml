@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- This file contains the recipes to convert armor between UNSC and Insurgency versions  -->
+<Defs>
+
+    <!-- INSURGENCY -> UNSC -->
+
+    <!-- Regular INS Helmet -> Regular UNSC Helmet -->
+    <RecipeDef>
+    <defName>ConvertUNSC</defName>
+    <recipeUsers>
+      <li>MachiningTable</li>
+    </recipeUsers>
+    <label>Convert Armor</label>
+    <description>Convert Armor</description>
+    <jobString>Convert Armor</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>300</workAmount>
+    <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HALO_INS_MarineHelmet_Regular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HALO_INS_MarineHelmet_Regular</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <HALO_UNSC_MarineHelmet_Regular>1</HALO_UNSC_MarineHelmet_Regular>
+    </products>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef> 
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+  <name>Halo - The Insurrection Expanded</name>
+  <author>kev675243</author>
+  <packageId>kev675243.HaloTheInsurrection</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>
+    This is a simple re-texture of the Halo faction's UNSC gear for a slight variation. Was weird-ed out the innies in the halo mod was using the exact some gear as the UNSC, as to why this exists.
+
+	Replaces UNSC military apparel on spawn with Insurrectionist variants for pawns belonging to said faction. 
+	Designed to make Insurrectionist forces visually different from their UNSC counterparts.
+
+	Any pawn from the insurrection faction will dawn these armor instead of unsc gear.
+
+	Compatible with RimWorld 1.4 through 1.6, and ce.
+  </description>
+  <modDependencies>
+    <li>
+      <packageId>Harkon.HALO.UNSCFaction</packageId>
+      <displayName>HALO - UNSC Faction (1.6)</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2412382876</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>

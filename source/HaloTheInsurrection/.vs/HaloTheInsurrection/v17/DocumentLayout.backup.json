@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\the Insurrection\\source\\HaloTheInsurrection\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C83E675-E9C3-4C88-BB09-5086997016C4}|HaloTheInsurrection\\HaloTheInsurrection.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\the insurrection\\source\\halotheinsurrection\\halotheinsurrection\\halotheinsurrection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C83E675-E9C3-4C88-BB09-5086997016C4}|HaloTheInsurrection\\HaloTheInsurrection.csproj|solutionrelative:halotheinsurrection\\halotheinsurrection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HaloTheInsurrection.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\the Insurrection\\source\\HaloTheInsurrection\\HaloTheInsurrection\\HaloTheInsurrection.cs",
+              "RelativeDocumentMoniker": "HaloTheInsurrection\\HaloTheInsurrection.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\the Insurrection\\source\\HaloTheInsurrection\\HaloTheInsurrection\\HaloTheInsurrection.cs",
+              "RelativeToolTip": "HaloTheInsurrection\\HaloTheInsurrection.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAkwI0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T07:28:22.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
