@@ -7,7 +7,7 @@
 
     <!-- Regular INS Helmet -> Regular UNSC Helmet -->
     <RecipeDef>
-    <defName>ConvertUNSC</defName>
+    <defName>ConvertUNSCHelmetRegular</defName>
     <recipeUsers>
       <li>MachiningTable</li>
     </recipeUsers>
